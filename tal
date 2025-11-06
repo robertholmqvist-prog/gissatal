@@ -1,1 +1,12 @@
-print("hello World")
+import random
+försök = 3
+hemligt_tal = random.randint(1, 10)
+
+while försök > 0:
+    gissning = int(input("gissa ett tal: "))
+    if gissning == hemligt_tal:
+        print("rätt gissat!")
+        break
+    else:
+        försök -= 1
+        print(f"fel gissat! Du har {försök} försök kvar.")
